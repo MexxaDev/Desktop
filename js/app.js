@@ -1,3 +1,5 @@
+alert("Por favor preciona F11 para poner la pagina en pantalla completa");
+
 const Hora = new Date();
 let h = Hora.getHours();
 let m = Hora.getMinutes();
