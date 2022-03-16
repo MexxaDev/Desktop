@@ -1,18 +1,24 @@
-alert("Por favor preciona F11 para poner la pagina en pantalla completa");
-
-const Hora = new Date();
-let h = Hora.getHours();
-let m = Hora.getMinutes();
-let s = Hora.getSeconds();
 
 
 
-var HoraActual = document.getElementById("hora");
-var MinutoActual = document.getElementById("minuto");
-var SegundoActual = document.getElementById("segundo");
+
+    let hora = document.getElementById('hora');
+    let minuto = document.getElementById('minuto');
+    let segundo = document.getElementById('segundo');
+
+function time() {
+    var Hora = new Date();
+
+    let h = Hora.getHours();
+    let m = Hora.getMinutes();
+    let s = Hora.getSeconds();
 
 
 
-var time = h + ":" + m + ":" + s;
 
-HoraActual.innerHTML = time
+    hora.innerHTML = h + ":";
+    minuto.innerHTML = m + ":";
+    segundo.innerHTML = s;
+}
+
+setInterval(time, 1000);
